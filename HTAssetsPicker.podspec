@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :path => 'https://github.com/NEYouFan/HTAssetsPicker-iOS.git', :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/NEYouFan/HTAssetsPicker-iOS.git", :tag => s.version.to_s }
 
   s.source_files  = "HTAssetsPicker/**/*.{h,m}"
 
