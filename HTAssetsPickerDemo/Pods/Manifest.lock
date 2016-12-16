@@ -1,0 +1,40 @@
+PODS:
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.1):
+    - CocoaLumberjack/Default
+  - HTAssetsPicker (0.0.1)
+  - HTCommonUtility (0.0.1):
+    - CocoaLumberjack (= 2.0.1)
+
+DEPENDENCIES:
+  - HTAssetsPicker (from `https://g.hz.netease.com/HTIOSUI/HTAssetsPicker.git`, branch `master`)
+  - HTCommonUtility (from `https://g.hz.netease.com/HeartTouchOpen/HTCommonUtils.git`)
+
+EXTERNAL SOURCES:
+  HTAssetsPicker:
+    :branch: master
+    :git: https://g.hz.netease.com/HTIOSUI/HTAssetsPicker.git
+  HTCommonUtility:
+    :git: https://g.hz.netease.com/HeartTouchOpen/HTCommonUtils.git
+
+CHECKOUT OPTIONS:
+  HTAssetsPicker:
+    :commit: 2a2a9660e86477a81c7481512c13cedb24b5a0f8
+    :git: https://g.hz.netease.com/HTIOSUI/HTAssetsPicker.git
+  HTCommonUtility:
+    :commit: 3820205d70b32a4b4e96f1b0ad52b41a32c879ef
+    :git: https://g.hz.netease.com/HeartTouchOpen/HTCommonUtils.git
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  HTAssetsPicker: 551734a1fb2ebd5bd841484dac7e814519e107ed
+  HTCommonUtility: cc018fa665ae03e0fb5b7734d95b6452b8e16c0c
+
+PODFILE CHECKSUM: 49e293f2ceda68c0804d8ce7cd136676551ccffe
+
+COCOAPODS: 1.0.1

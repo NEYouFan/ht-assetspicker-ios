@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9298523D1DB76B63009852DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9298523C1DB76B63009852DC /* main.m */; };
+		929852401DB76B63009852DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9298523F1DB76B63009852DC /* AppDelegate.m */; };
+		929852431DB76B63009852DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929852421DB76B63009852DC /* ViewController.m */; };
+		929852461DB76B63009852DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929852441DB76B63009852DC /* Main.storyboard */; };
+		929852481DB76B63009852DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929852471DB76B63009852DC /* Assets.xcassets */; };
+		9298524B1DB76B63009852DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929852491DB76B63009852DC /* LaunchScreen.storyboard */; };
+		929852731DB773F0009852DC /* HTAssetsPickerOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 929852701DB773F0009852DC /* HTAssetsPickerOrderCell.m */; };
+		929852741DB773F0009852DC /* HTAssetsPickerUnorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 929852721DB773F0009852DC /* HTAssetsPickerUnorderCell.m */; };
+		9298527E1DB773F9009852DC /* HTAssetsPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929852761DB773F9009852DC /* HTAssetsPickerViewController.m */; };
+		9298527F1DB773F9009852DC /* SpecificImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 929852781DB773F9009852DC /* SpecificImagePicker.m */; };
+		929852801DB773F9009852DC /* HTCustomAlbumChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9298527B1DB773F9009852DC /* HTCustomAlbumChooser.m */; };
+		929852811DB773F9009852DC /* HTTableAlbumChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9298527D1DB773F9009852DC /* HTTableAlbumChooser.m */; };
+		BB7DE9CD6D840F8069F5CD9C /* libPods-HTAssetsPickerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB20C264F2B438632D10EC7 /* libPods-HTAssetsPickerDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FB20C264F2B438632D10EC7 /* libPods-HTAssetsPickerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HTAssetsPickerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		278CF10396179A1737F0E378 /* Pods-HTAssetsPickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTAssetsPickerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTAssetsPickerDemo/Pods-HTAssetsPickerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7C1EA005651567D58E15E63F /* Pods-HTAssetsPickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTAssetsPickerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTAssetsPickerDemo/Pods-HTAssetsPickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		929852381DB76B63009852DC /* HTAssetsPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTAssetsPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9298523C1DB76B63009852DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9298523E1DB76B63009852DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9298523F1DB76B63009852DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		929852411DB76B63009852DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		929852421DB76B63009852DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		929852451DB76B63009852DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		929852471DB76B63009852DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9298524A1DB76B63009852DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9298524C1DB76B63009852DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9298526F1DB773F0009852DC /* HTAssetsPickerOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAssetsPickerOrderCell.h; sourceTree = "<group>"; };
+		929852701DB773F0009852DC /* HTAssetsPickerOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAssetsPickerOrderCell.m; sourceTree = "<group>"; };
+		929852711DB773F0009852DC /* HTAssetsPickerUnorderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAssetsPickerUnorderCell.h; sourceTree = "<group>"; };
+		929852721DB773F0009852DC /* HTAssetsPickerUnorderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAssetsPickerUnorderCell.m; sourceTree = "<group>"; };
+		929852751DB773F9009852DC /* HTAssetsPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAssetsPickerViewController.h; sourceTree = "<group>"; };
+		929852761DB773F9009852DC /* HTAssetsPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAssetsPickerViewController.m; sourceTree = "<group>"; };
+		929852771DB773F9009852DC /* SpecificImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificImagePicker.h; sourceTree = "<group>"; };
+		929852781DB773F9009852DC /* SpecificImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificImagePicker.m; sourceTree = "<group>"; };
+		9298527A1DB773F9009852DC /* HTCustomAlbumChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCustomAlbumChooser.h; sourceTree = "<group>"; };
+		9298527B1DB773F9009852DC /* HTCustomAlbumChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCustomAlbumChooser.m; sourceTree = "<group>"; };
+		9298527C1DB773F9009852DC /* HTTableAlbumChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTableAlbumChooser.h; sourceTree = "<group>"; };
+		9298527D1DB773F9009852DC /* HTTableAlbumChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTableAlbumChooser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		929852351DB76B63009852DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7DE9CD6D840F8069F5CD9C /* libPods-HTAssetsPickerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70F45FF4F02ADC99F0B0E21C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EA005651567D58E15E63F /* Pods-HTAssetsPickerDemo.debug.xcconfig */,
+				278CF10396179A1737F0E378 /* Pods-HTAssetsPickerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9298522F1DB76B63009852DC = {
+			isa = PBXGroup;
+			children = (
+				9298523A1DB76B63009852DC /* HTAssetsPickerDemo */,
+				929852391DB76B63009852DC /* Products */,
+				70F45FF4F02ADC99F0B0E21C /* Pods */,
+				DD6EFCA5527A51CAA319BC30 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		929852391DB76B63009852DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				929852381DB76B63009852DC /* HTAssetsPickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9298523A1DB76B63009852DC /* HTAssetsPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				929852591DB76C26009852DC /* HTAssetsPicker */,
+				9298523E1DB76B63009852DC /* AppDelegate.h */,
+				9298523F1DB76B63009852DC /* AppDelegate.m */,
+				929852411DB76B63009852DC /* ViewController.h */,
+				929852421DB76B63009852DC /* ViewController.m */,
+				929852441DB76B63009852DC /* Main.storyboard */,
+				929852471DB76B63009852DC /* Assets.xcassets */,
+				929852491DB76B63009852DC /* LaunchScreen.storyboard */,
+				9298524C1DB76B63009852DC /* Info.plist */,
+				9298523B1DB76B63009852DC /* Supporting Files */,
+			);
+			path = HTAssetsPickerDemo;
+			sourceTree = "<group>";
+		};
+		9298523B1DB76B63009852DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9298523C1DB76B63009852DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		929852591DB76C26009852DC /* HTAssetsPicker */ = {
+			isa = PBXGroup;
+			children = (
+				929852751DB773F9009852DC /* HTAssetsPickerViewController.h */,
+				929852761DB773F9009852DC /* HTAssetsPickerViewController.m */,
+				929852771DB773F9009852DC /* SpecificImagePicker.h */,
+				929852781DB773F9009852DC /* SpecificImagePicker.m */,
+				929852791DB773F9009852DC /* table_album_chooser */,
+				9298526E1DB773F0009852DC /* custom_cells */,
+			);
+			path = HTAssetsPicker;
+			sourceTree = "<group>";
+		};
+		9298526E1DB773F0009852DC /* custom_cells */ = {
+			isa = PBXGroup;
+			children = (
+				9298526F1DB773F0009852DC /* HTAssetsPickerOrderCell.h */,
+				929852701DB773F0009852DC /* HTAssetsPickerOrderCell.m */,
+				929852711DB773F0009852DC /* HTAssetsPickerUnorderCell.h */,
+				929852721DB773F0009852DC /* HTAssetsPickerUnorderCell.m */,
+			);
+			path = custom_cells;
+			sourceTree = "<group>";
+		};
+		929852791DB773F9009852DC /* table_album_chooser */ = {
+			isa = PBXGroup;
+			children = (
+				9298527A1DB773F9009852DC /* HTCustomAlbumChooser.h */,
+				9298527B1DB773F9009852DC /* HTCustomAlbumChooser.m */,
+				9298527C1DB773F9009852DC /* HTTableAlbumChooser.h */,
+				9298527D1DB773F9009852DC /* HTTableAlbumChooser.m */,
+			);
+			path = table_album_chooser;
+			sourceTree = "<group>";
+		};
+		DD6EFCA5527A51CAA319BC30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FB20C264F2B438632D10EC7 /* libPods-HTAssetsPickerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		929852371DB76B63009852DC /* HTAssetsPickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9298524F1DB76B63009852DC /* Build configuration list for PBXNativeTarget "HTAssetsPickerDemo" */;
+			buildPhases = (
+				6EC104CE2EE7DF9953BF8263 /* [CP] Check Pods Manifest.lock */,
+				929852341DB76B63009852DC /* Sources */,
+				929852351DB76B63009852DC /* Frameworks */,
+				929852361DB76B63009852DC /* Resources */,
+				7FB5A36D9A054AFB79E3E826 /* [CP] Embed Pods Frameworks */,
+				AF856DFD8C50B481F86AF875 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTAssetsPickerDemo;
+			productName = HTAssetsPickerDemo;
+			productReference = 929852381DB76B63009852DC /* HTAssetsPickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		929852301DB76B63009852DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = cxq;
+				TargetAttributes = {
+					929852371DB76B63009852DC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 929852331DB76B63009852DC /* Build configuration list for PBXProject "HTAssetsPickerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9298522F1DB76B63009852DC;
+			productRefGroup = 929852391DB76B63009852DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				929852371DB76B63009852DC /* HTAssetsPickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		929852361DB76B63009852DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9298524B1DB76B63009852DC /* LaunchScreen.storyboard in Resources */,
+				929852481DB76B63009852DC /* Assets.xcassets in Resources */,
+				929852461DB76B63009852DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EC104CE2EE7DF9953BF8263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB5A36D9A054AFB79E3E826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTAssetsPickerDemo/Pods-HTAssetsPickerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF856DFD8C50B481F86AF875 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTAssetsPickerDemo/Pods-HTAssetsPickerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		929852341DB76B63009852DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929852431DB76B63009852DC /* ViewController.m in Sources */,
+				9298527E1DB773F9009852DC /* HTAssetsPickerViewController.m in Sources */,
+				929852741DB773F0009852DC /* HTAssetsPickerUnorderCell.m in Sources */,
+				929852731DB773F0009852DC /* HTAssetsPickerOrderCell.m in Sources */,
+				929852801DB773F9009852DC /* HTCustomAlbumChooser.m in Sources */,
+				929852401DB76B63009852DC /* AppDelegate.m in Sources */,
+				929852811DB773F9009852DC /* HTTableAlbumChooser.m in Sources */,
+				9298523D1DB76B63009852DC /* main.m in Sources */,
+				9298527F1DB773F9009852DC /* SpecificImagePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		929852441DB76B63009852DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929852451DB76B63009852DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		929852491DB76B63009852DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9298524A1DB76B63009852DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9298524D1DB76B63009852DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9298524E1DB76B63009852DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		929852501DB76B63009852DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1EA005651567D58E15E63F /* Pods-HTAssetsPickerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HTAssetsPickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.HTAssetsPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		929852511DB76B63009852DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278CF10396179A1737F0E378 /* Pods-HTAssetsPickerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HTAssetsPickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.HTAssetsPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		929852331DB76B63009852DC /* Build configuration list for PBXProject "HTAssetsPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9298524D1DB76B63009852DC /* Debug */,
+				9298524E1DB76B63009852DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9298524F1DB76B63009852DC /* Build configuration list for PBXNativeTarget "HTAssetsPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929852501DB76B63009852DC /* Debug */,
+				929852511DB76B63009852DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 929852301DB76B63009852DC /* Project object */;
+}
