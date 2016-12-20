@@ -16,14 +16,14 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HTAssetsPicker"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of HTAssetsPicker."
+  s.version      = "0.0.2"
+  s.summary      = "网易标准化控件库之HTAssetsPicker."
 
   s.description  = <<-DESC
                    A longer description of HTAssetsPicker in Markdown format.
                    DESC
 
-  s.homepage     = "https://github.com/NEYouFan/HTAssetsPicker-iOS"
+  s.homepage     = "https://github.com/NEYouFan/ht-assetspicker-ios"
 
 
   s.license      = "MIT"
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 
-  s.source       = { :git => "https://github.com/NEYouFan/HTAssetsPicker-iOS.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/NEYouFan/ht-assetspicker-ios.git", :tag => s.version.to_s }
 
   s.source_files  = "HTAssetsPicker/**/*.{h,m}"
 
