@@ -7,6 +7,8 @@
 //
 
 #import "HTAssetsPickerCell.h"
+#import "HTAssetPickerCache.h"
+#import "HTCameraAssetItem.h"
 
 @interface HTAssetsPickerCell ()
 @property (nonatomic,assign) NSInteger requestID;
@@ -55,15 +57,32 @@
         return;
     }
     
-    _requestID = [assetItem itemImageWithCompletion:^(UIImage *image, NSDictionary *info) {
-        if (image) {
-            if (_requestID != -1 && info && _requestID != [[info valueForKey:PHImageResultRequestIDKey] integerValue]) {
-                return;
+    if ([assetItem isKindOfClass:[HTCameraAssetItem class]]) {
+        //cameraAsset 无需缓存
+        _requestID = [assetItem itemImageWithCompletion:^(UIImage *image, NSDictionary *info) {
+            if (image) {
+                if (_requestID != -1 && info && _requestID != [[info valueForKey:PHImageResultRequestIDKey] integerValue]) {
+                    return;
+                }
+                _contentImageView.image = image;
             }
-            _contentImageView.image = image;
+        }];
+    } else {
+        //imageAsset 缓存
+        if (![[HTAssetPickerCache shareAssetPickerCache] objectForKey:assetItem.asset.localIdentifier]) {
+            _requestID = [assetItem itemImageWithCompletion:^(UIImage *image, NSDictionary *info) {
+                if (image) {
+                    if (_requestID != -1 && info && _requestID != [[info valueForKey:PHImageResultRequestIDKey] integerValue]) {
+                        return;
+                    }
+                    _contentImageView.image = image;
+                    [[HTAssetPickerCache shareAssetPickerCache] setObject:image forKey: assetItem.asset.localIdentifier];
+                }
+            }];
+        } else {
+            _contentImageView.image = [[HTAssetPickerCache shareAssetPickerCache] objectForKey:assetItem.asset.localIdentifier];
         }
-        
-    }];
+    }
     if (assetItem.isSelected) {
         [self selectedWithIndex:assetItem.index];
     }else{

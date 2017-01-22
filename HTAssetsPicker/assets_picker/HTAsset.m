@@ -45,6 +45,7 @@
         PHImageRequestOptions *phImageRequestOptions = [[PHImageRequestOptions alloc] init];
         phImageRequestOptions.resizeMode = PHImageRequestOptionsResizeModeExact;//PHImageRequestOptionsResizeModeFast
         phImageRequestOptions.synchronous = YES;
+        phImageRequestOptions.networkAccessAllowed = YES;
         
         //同步请求，使用PHImageManager
         PHImageManager* manager = [PHImageManager defaultManager];
