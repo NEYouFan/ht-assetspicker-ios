@@ -1,1 +1,1 @@
-../../../HTAssetsPicker/HTAssetsPicker/assets_picker/HTCameraAssetItem.h
+../../../../../HTAssetsPicker/assets_picker/HTCameraAssetItem.h

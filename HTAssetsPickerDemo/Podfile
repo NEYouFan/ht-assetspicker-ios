@@ -1,5 +1,5 @@
 platform :ios, '7.0'
 target 'HTAssetsPickerDemo’ do
-  pod 'HTAssetsPicker', :git => 'https://g.hz.netease.com/HTIOSUI/HTAssetsPicker.git', :branch => 'master'
+  pod 'HTAssetsPicker', :path => '../'
   pod 'HTCommonUtility', :git => 'https://g.hz.netease.com/HeartTouchOpen/HTCommonUtils.git'
 end

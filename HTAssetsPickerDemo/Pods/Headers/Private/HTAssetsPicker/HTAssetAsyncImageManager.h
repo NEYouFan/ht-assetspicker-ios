@@ -1,1 +1,1 @@
-../../../HTAssetsPicker/HTAssetsPicker/assets_picker/HTAssetAsyncImageManager.h
+../../../../../HTAssetsPicker/assets_picker/HTAssetAsyncImageManager.h

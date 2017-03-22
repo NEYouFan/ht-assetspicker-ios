@@ -1,1 +1,1 @@
-../../../HTAssetsPicker/HTAssetsPicker/assets_picker/HTAssetsPickerCell.h
+../../../../../HTAssetsPicker/assets_picker/HTAssetsPickerCell.h
