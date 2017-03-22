@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HTAssetsPicker"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "网易标准化控件库之HTAssetsPicker."
 
   s.description  = <<-DESC
