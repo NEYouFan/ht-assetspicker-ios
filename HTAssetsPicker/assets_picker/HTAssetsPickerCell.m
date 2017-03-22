@@ -72,11 +72,15 @@
         if (![[HTAssetPickerCache shareAssetPickerCache] objectForKey:assetItem.asset.localIdentifier]) {
             _requestID = [assetItem itemImageWithCompletion:^(UIImage *image, NSDictionary *info) {
                 if (image) {
+                    
                     if (_requestID != -1 && info && _requestID != [[info valueForKey:PHImageResultRequestIDKey] integerValue]) {
                         return;
                     }
                     _contentImageView.image = image;
-                    [[HTAssetPickerCache shareAssetPickerCache] setObject:image forKey: assetItem.asset.localIdentifier];
+                    BOOL downloadFinined = ![[info objectForKey:PHImageCancelledKey] boolValue] && ![info objectForKey:PHImageErrorKey] && ![[info objectForKey:PHImageResultIsDegradedKey] boolValue];
+                    if (downloadFinined) {
+                        [[HTAssetPickerCache shareAssetPickerCache] setObject:image forKey: assetItem.asset.localIdentifier];
+                    }
                 }
             }];
         } else {

@@ -71,8 +71,8 @@
     if (_phasset) {
         PHImageRequestOptions *phImageRequestOptions = [[PHImageRequestOptions alloc] init];
         phImageRequestOptions.resizeMode = PHImageRequestOptionsResizeModeExact;
-        phImageRequestOptions.synchronous = YES;
-        PHImageManager* manager = [PHImageManager defaultManager];
+        phImageRequestOptions.synchronous = NO;
+        PHImageManager* manager = [HTAssetAsyncImageManager sharedInstance];
         return [manager requestImageForAsset:_phasset targetSize:size
                           contentMode:PHImageContentModeDefault
                               options:phImageRequestOptions
